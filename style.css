@@ -135,3 +135,14 @@ main {
     z-index: 2;
     transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.person {
+    position: absolute;
+    right: 125px;
+    bottom: 65px;
+    width: 325px;
+    z-index: 8;
+    filter: contrast(1.05) brightness(0.95);
+    transition: all 1.2s ease;
+    cursor: pointer;
+}
