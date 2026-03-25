@@ -123,3 +123,15 @@ main {
     opacity: 0.75;
     transition: all 1.5s ease;
 }
+
+.yellow-circle {
+    position: absolute;
+    right: 185px;
+    bottom: 105px;
+    width: 295px;
+    height: 295px;
+    background: radial-gradient(circle at 40% 30%, #ffe68c, #ffcc5c 70%);
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
