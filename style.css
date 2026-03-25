@@ -74,3 +74,13 @@ main {
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     transition: all 1.4s ease;
 }
+
+.tagline {
+    position: absolute;
+    left: 88px;
+    top: 132px;
+    font-size: 1.2rem;
+    color: #4a2c8a;
+    font-style: italic;
+    transition: opacity 0.8s ease;
+}
