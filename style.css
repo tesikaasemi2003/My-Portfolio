@@ -183,3 +183,8 @@ main {
 .hero .person:hover ~ .vertical-text {
     color: #2d5a44;
 }
+
+.hero .person:hover ~ .yellow-circle {
+    background: radial-gradient(circle at 40% 30%, #ffcc80, #ff9f4c 70%);
+    transform: scale(1.12) translate(-28px, -18px);
+}
