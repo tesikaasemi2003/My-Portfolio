@@ -196,3 +196,7 @@ main {
 .hero .person:hover {
     filter: contrast(1.1) brightness(1.05);
 }
+
+.person-hover-effect {
+    background: linear-gradient(135deg, #7ed9a0 0%, #9be8b8 50%, #b0f0c8 100%);
+}
