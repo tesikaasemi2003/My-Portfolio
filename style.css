@@ -20,3 +20,11 @@ header {
     position: relative;
     z-index: 30;
 }
+
+nav {
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+    color: #3f2a7a;
+    font-weight: 500;
+}
