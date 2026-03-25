@@ -54,3 +54,23 @@ main {
     box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
     transition: background 1.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.logo {
+    position: absolute;
+    top: 48px;
+    right: 60px;
+    width: 58px;
+    height: 58px;
+    background: #4ade80;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.05;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: all 1.4s ease;
+}
