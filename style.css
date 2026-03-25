@@ -28,3 +28,8 @@ nav {
     color: #3f2a7a;
     font-weight: 500;
 }
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
