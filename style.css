@@ -200,3 +200,12 @@ main {
 .person-hover-effect {
     background: linear-gradient(135deg, #7ed9a0 0%, #9be8b8 50%, #b0f0c8 100%);
 }
+
+footer {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    padding: 20px 0;
+    color: #6b4fa3;
+    font-size: 14px;
+}
