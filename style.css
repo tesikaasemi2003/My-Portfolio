@@ -97,3 +97,15 @@ main {
     z-index: 10;
     transition: all 1.4s ease;
 }
+
+.main-text {
+    position: absolute;
+    left: 88px;
+    bottom: 165px;
+    font-size: 5.3rem;
+    font-weight: 900;
+    line-height: 0.92;
+    color: #2c1f5e;
+    z-index: 10;
+    transition: all 1.4s ease;
+}
