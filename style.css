@@ -175,3 +175,7 @@ main {
 .hero .person:hover ~ .logo {
     background: #6d28d9;
 }
+
+.hero .person:hover ~ .main-text {
+    color: #1e3a2f;
+}
