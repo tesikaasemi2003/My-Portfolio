@@ -6,32 +6,35 @@
 
 body {
     font-family: system-ui, -apple-system, sans-serif;
-    background: #f0e6ff;
+    background:  #3f2a7a;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    color: #f0e6ff;
 }
 
 header {
     width: 100%;
-    max-width: 1100px;
-    padding: 20px 60px 0;
-    position: relative;
-    z-index: 30;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 60px 0;
 }
 
 nav {
     display: flex;
-    gap: 40px;
-    font-size: 15px;
-    color: #3f2a7a;
+    gap: 50px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 nav a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #6d28d9;
 }
 
 main {
@@ -39,173 +42,176 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 20px 0;
+    padding: 40px 20px;
 }
 
 .hero {
     width: 100%;
-    max-width: 1100px;
-    height: 650px;
+    max-width: 1200px;
+    height: 620px;
     position: relative;
-    background: linear-gradient(135deg, #b794f4 0%, #c3a6ff 50%, #d1b3ff 100%);
-    border-radius: 28px;
+    background: #f0e6ff;
+    border-radius: 32px;
     overflow: hidden;
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
-    transition: background 1.6s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+    transition: background 1.2s ease;
 }
 
-.logo {
-    position: absolute;
-    top: 48px;
-    right: 60px;
-    width: 58px;
-    height: 58px;
-    background: #4ade80;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 10.5px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.05;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    transition: all 1.4s ease;
-}
-
+/* Tagline */
 .tagline {
     position: absolute;
-    left: 88px;
-    top: 132px;
-    font-size: 1.2rem;
-    color: #4a2c8a;
+    left: 90px;
+    top: 110px;
+    font-size: 1.35rem;
+    color: #6d28d9;
     font-style: italic;
-    transition: opacity 0.8s ease;
-}
-
-.vertical-text {
-    position: absolute;
-    left: 65px;
-    bottom: 195px;
-    writing-mode: vertical-rl;
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 5px;
-    color: #6b4fa3;
-    z-index: 10;
-    transition: all 1.4s ease;
-}
-
-.main-text {
-    position: absolute;
-    left: 88px;
-    bottom: 165px;
-    font-size: 5.3rem;
-    font-weight: 900;
-    line-height: 0.92;
-    color: #2c1f5e;
-    z-index: 10;
-    transition: all 1.4s ease;
-}
-
-.curve {
-    position: absolute;
-    left: 130px;
-    bottom: 220px;
-    width: 160px;
-    height: 210px;
-    border: 3px solid #ffdb5c;
-    border-radius: 50% 50% 0 0;
-    border-bottom: none;
-    z-index: 5;
-    opacity: 0.75;
-    transition: all 1.5s ease;
-}
-
-.yellow-circle {
-    position: absolute;
-    right: 185px;
-    bottom: 105px;
-    width: 295px;
-    height: 295px;
-    background: radial-gradient(circle at 40% 30%, #ffe68c, #ffcc5c 70%);
-    border-radius: 50%;
-    z-index: 2;
-    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.person {
-    position: absolute;
-    right: 125px;
-    bottom: 65px;
-    width: 325px;
-    z-index: 8;
-    filter: contrast(1.05) brightness(0.95);
-    transition: all 1.2s ease;
-    cursor: pointer;
-}
-
-.cta {
-    position: absolute;
-    right: 105px;
-    bottom: 125px;
-    width: 148px;
-    height: 148px;
-    background: #ff4d4d;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 13.5px;
-    font-weight: 700;
-    line-height: 1.25;
-    box-shadow: 0 12px 30px rgba(255, 77, 77, 0.4);
-    z-index: 15;
-    transition: all 0.6s ease;
-}
-
-.cta:hover {
-    transform: scale(1.08);
-}
-
-.hero .person:hover ~ .logo {
-    background: #6d28d9;
-}
-
-.hero .person:hover ~ .main-text {
-    color: #1e3a2f;
-}
-
-.hero .person:hover ~ .vertical-text {
-    color: #2d5a44;
-}
-
-.hero .person:hover ~ .yellow-circle {
-    background: radial-gradient(circle at 40% 30%, #ffcc80, #ff9f4c 70%);
-    transform: scale(1.12) translate(-28px, -18px);
-}
-
-.hero .person:hover ~ .tagline {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
 }
 
-.hero .person:hover {
-    filter: contrast(1.1) brightness(1.05);
+/* Vertical Text */
+.vertical-text {
+    position: absolute;
+    left: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #7c3aed;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.person-hover-effect {
-    background: linear-gradient(135deg, #7ed9a0 0%, #9be8b8 50%, #b0f0c8 100%);
+/* Main Text */
+.main-text {
+    position: absolute;
+    left: 88px;
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: 6.8rem;
+    font-weight: 900;
+    line-height: 0.88;
+    color: #1e2937;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-footer {
-    width: 100%;
-    max-width: 1100px;
+/* Decorative Arc */
+.arc {
+    position: absolute;
+    left: 115px;
+    top: 48%;
+    width: 210px;
+    height: 260px;
+    border: 4px solid #fcd34d;
+    border-radius: 50%;
+    border-bottom: none;
+    border-top: none;
+    transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Yellow Circle */
+.yellow-circle {
+    position: absolute;
+    right: 180px;
+    bottom: 90px;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle at 35% 30%, #fef08c, #facc15);
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 1.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Person Image */
+.person {
+    position: absolute;
+    right: 140px;
+    bottom: 40px;
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* CTA Button */
+.cta {
+    position: absolute;
+    right: 110px;
+    bottom: 130px;
+    width: 168px;
+    height: 168px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px 0;
-    color: #6b4fa3;
-    font-size: 14px;
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 1.3;
+    box-shadow: 0 15px 35px rgba(239, 68, 68, 0.45);
+    z-index: 10;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.cta:hover {
+    transform: scale(1.12);
+    background: #dc2626;
+}
+
+.arrow {
+    font-size: 28px;
+    display: block;
+    margin-top: 4px;
+    transition: transform 0.4s ease;
+}
+
+.cta:hover .arrow {
+    transform: translateX(6px);
+}
+
+/* ================== SMOOTH HOVER TRANSITIONS ================== */
+
+.hero:hover .yellow-circle {
+    transform: scale(1.09) translate(-30px, -25px);
+    background: radial-gradient(circle at 35% 30%, #fed7aa, #fb923c);
+}
+
+.hero:hover .main-text {
+    color: #166534;
+    transform: translateY(-40%) scale(1.03);
+}
+
+.hero:hover .vertical-text {
+    color: #14532d;
+    letter-spacing: 8px;
+}
+
+.hero:hover .tagline {
+    color: #4c1d95;
+}
+
+.hero:hover .arc {
+    border-color: #eab308;
+    transform: scale(1.05);
+}
+
+.hero:hover .person {
+    filter: brightness(1.12) contrast(1.08);
+    transform: scale(1.04) translateX(-10px);
+}
+
+/* Engineer Mode - Triggered when hovering on the person */
+.person:hover ~ * {
+    transition: all 1.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.person:hover {
+    filter: brightness(1.15) contrast(1.12);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
 }
