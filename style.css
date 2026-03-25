@@ -171,3 +171,7 @@ main {
 .cta:hover {
     transform: scale(1.08);
 }
+
+.hero .person:hover ~ .logo {
+    background: #6d28d9;
+}
