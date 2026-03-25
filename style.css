@@ -179,3 +179,7 @@ main {
 .hero .person:hover ~ .main-text {
     color: #1e3a2f;
 }
+
+.hero .person:hover ~ .vertical-text {
+    color: #2d5a44;
+}
