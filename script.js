@@ -8,8 +8,17 @@ const tagline = document.getElementById('tagline');
 person.addEventListener('mouseenter', () => {
     hero.classList.add('person-hover-effect');
 
+    logo.innerHTML = `SOFTWARE<br>ENGINEER`;
+    main.textContent = `ENGINEER`;
+    vertical.textContent = `SOFTWARE ENGINEER`;
+    tagline.textContent = `That's Me again!`;
+});
+
+person.addEventListener('mouseleave', () => {
+    hero.classList.remove('person-hover-effect');
+
     logo.innerHTML = `UI/UX<br>DESIGNER`;
     main.textContent = `DESIGNER`;
     vertical.textContent = `UI/UX DESIGNER`;
-    tagline.textContent = `That's Me again!`;
+    tagline.textContent = `Yes, that's Me!`;
 });
