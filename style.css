@@ -267,3 +267,7 @@ footer {
     object-fit: cover;
     transition: transform 0.7s ease;
 }
+
+.gallery-grid li:hover img {
+    transform: scale(1.12);
+}
