@@ -256,3 +256,7 @@ footer {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     transition: transform 0.4s ease;
 }
+
+.gallery-grid li:hover {
+    transform: translateY(-10px);
+}
