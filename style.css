@@ -389,6 +389,28 @@ footer {
     filter: brightness(1.2);
 }
 
+.icon-bubble:hover .bubble {
+    transform: scale(1.15);
+}
+
+.bubble {
+    width: 76px;
+    height: 76px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.4),
+            inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transition:
+            transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+            box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
 
 
 
