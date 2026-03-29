@@ -393,4 +393,10 @@ footer {
         width: clamp(130px, 50vw, 200px);
         height: clamp(130px, 50vw, 200px);
     }
+
+    .person {
+        right: 3%;
+        bottom: 10%;
+        width: clamp(150px, 52vw, 220px);
+    }
 }
