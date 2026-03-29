@@ -13,43 +13,61 @@ body {
     color: #e0d4ff;
 }
 
+/* ================== HEADER / NAV ================== */
 header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 35px 60px 0;
+    padding: 28px 40px 0;
 }
 
 nav {
     display: flex;
-    gap: 48px;
-    font-size: 16.5px;
+    flex-wrap: wrap;
+    gap: 24px 36px;
+    font-size: 15.5px;
     font-weight: 500;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 nav a:hover {
     color: #c4b5fd;
 }
 
-/* Main Content Area */
+/* Hamburger button — hidden by default */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 2px solid #c4b5fd;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: #c4b5fd;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: auto;
+}
+
+/* ================== MAIN / HERO ================== */
 main {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 30px 16px;
 }
 
 .hero {
     width: 100%;
     max-width: 1180px;
-    height: clamp(520px, 85vh , 620px);
+    height: clamp(480px, 82vh, 620px);
     position: relative;
     background: #4c1d95;
     border-radius: 32px;
@@ -63,12 +81,11 @@ main {
     position: absolute;
     left: 6%;
     top: 8%;
-    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.4rem);
     color: #c4b5fd;
     font-style: italic;
     z-index: 10;
 }
-
 
 /* Vertical Text */
 .vertical-text {
@@ -77,7 +94,7 @@ main {
     top: 50%;
     transform: translateY(-50%);
     writing-mode: vertical-rl;
-    font-size: clamp(1rem , 2.2vw, 1.28rem);
+    font-size: clamp(0.85rem, 2vw, 1.28rem);
     font-weight: 700;
     letter-spacing: 5px;
     color: #a5b4fc;
@@ -90,7 +107,7 @@ main {
     left: 6%;
     top: 48%;
     transform: translateY(-42%);
-    font-size: clamp(3.2rem, 9vw, 7.2rem);
+    font-size: clamp(2.8rem, 8vw, 7.2rem);
     font-weight: 900;
     line-height: 0.85;
     color: #f1e8ff;
@@ -102,8 +119,8 @@ main {
     position: absolute;
     left: 12%;
     top: 46%;
-    width: clamp(140px, 20vw, 205px);
-    height: clamp(180px, 26vw, 255px);
+    width: clamp(120px, 18vw, 205px);
+    height: clamp(160px, 24vw, 255px);
     border: 5px solid #fcd34d;
     border-radius: 50%;
     border-bottom: none;
@@ -116,19 +133,20 @@ main {
     position: absolute;
     right: 7%;
     bottom: 12%;
-    width: clamp(180px, 38vw, 355px);
-    height: clamp(180px, 38vw, 355px);
+    width: clamp(160px, 35vw, 355px);
+    height: clamp(160px, 35vw, 355px);
     background: radial-gradient(circle at 38% 32%, #fef08c, #facc15);
     border-radius: 50%;
     z-index: 2;
+    transition: transform 0.9s ease;
 }
 
-/* Person Image - Centered nicely */
+/* Person Image */
 .person {
     position: absolute;
     right: 8%;
     bottom: 8%;
-    width: clamp(200px, 42vw, 395px);
+    width: clamp(180px, 38vw, 395px);
     border-radius: 24px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     z-index: 5;
@@ -140,8 +158,8 @@ main {
     position: absolute;
     right: 9%;
     bottom: 22%;
-    width: clamp(110px, 24vw, 170px);
-    height: clamp(110px, 24vw, 170px);
+    width: clamp(100px, 20vw, 170px);
+    height: clamp(100px, 20vw, 170px);
     background: #ef4444;
     color: white;
     border-radius: 50%;
@@ -149,12 +167,13 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: clamp(12.5px, 2.2vw, 14.8px);
+    font-size: clamp(11px, 1.8vw, 14.8px);
     font-weight: 700;
     box-shadow: 0 15px 40px rgba(239, 68, 68, 0.5);
     z-index: 15;
     transition: all 0.6s ease;
     line-height: 1.15;
+    cursor: pointer;
 }
 
 .cta:hover {
@@ -163,23 +182,12 @@ main {
 }
 
 .arrow {
-    font-size: 29px;
+    font-size: 26px;
     display: block;
-    margin-top: 5px;
-}
-
-/* Footer at bottom */
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    color: #c4b5fd;
-    font-size: 14.5px;
-    margin-top: auto;
+    margin-top: 4px;
 }
 
 /* ================== HOVER EFFECTS ================== */
-
 .person:hover ~ .yellow-circle {
     transform: scale(1.08) translate(-25px, -20px);
 }
@@ -203,124 +211,12 @@ footer {
     filter: brightness(1.15);
 }
 
-@media (max-width: 1024px) {
-    .hero { height: 560px; }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 520px;
-        border-radius: 24px;
-    }
-
-    .arc { display: none; }           /* Remove overlapping arc */
-
-    .vertical-text {
-        letter-spacing: 3px;
-        font-size: 1.05rem;
-    }
-
-    .yellow-circle {
-        right: 6%;
-        bottom: 15%;
-    }
-
-    .person {
-        right: 6%;
-        bottom: 10%;
-        width: clamp(190px, 48vw, 300px);
-    }
-
-    .cta {
-        right: 7%;
-        bottom: 18%;
-        width: clamp(105px, 26vw, 135px);
-        height: clamp(105px, 26vw, 135px);
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        height: 480px;
-    }
-
-    .tagline { top: 6%; }
-
-    .main-text {
-        top: 45%;
-        font-size: clamp(2.6rem, 10vw, 4.2rem);
-    }
-
-    .yellow-circle {
-        right: 5%;
-        bottom: 18%;
-        width: clamp(160px, 52vw, 220px);
-        height: clamp(160px, 52vw, 220px);
-    }
-
-    .person {
-        right: 5%;
-        bottom: 12%;
-        width: clamp(170px, 55vw, 240px);
-    }
-
-    .cta {
-        right: 6%;
-        bottom: 23%;
-        width: clamp(95px, 28vw, 120px);
-        height: clamp(95px, 28vw, 120px);
-        font-size: 12px;
-    }
-}
-
-
-/*---------------------Gallery------------------------- */
-
-.gallery-section {
-    padding: 120px 5% 140px;
-    background: #3b1a75;
-    text-align: center;
-}
-
-.gallery-section h2 {
-    font-size: 3.2rem;
-    margin-bottom: 70px;
-    color: #f1e8ff;
-    font-weight: 700;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-    list-style: none;
-    padding: 0;
-}
-
-.gallery-grid li {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    aspect-ratio: 1 / 1;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    transition: transform 0.4s ease;
-}
-
-.gallery-grid li:hover {
-    transform: translateY(-12px);
-}
-
-.gallery-grid li img {
+/* ================== FOOTER ================== */
+footer {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s ease;
+    text-align: center;
+    padding: 22px 0;
+    color: #c4b5fd;
+    font-size: 14px;
+    margin-top: auto;
 }
-
-.gallery-grid li:hover img {
-    transform: scale(1.15);
-}
-
-
