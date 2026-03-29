@@ -237,3 +237,13 @@ footer {
     color: #f1e8ff;
     font-weight: 700;
 }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
