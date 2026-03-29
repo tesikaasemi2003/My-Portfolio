@@ -271,3 +271,12 @@ footer {
 .gallery-grid li:hover img {
     transform: scale(1.12);
 }
+
+/*==============RESPONSIVE BREAKPOINTS====================*/
+
+/* ---- Tablet landscape ---- */
+@media (max-width: 1024px) {
+    .hero {
+        height: clamp(460px, 78vh, 560px);
+    }
+}
