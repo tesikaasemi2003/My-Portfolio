@@ -421,4 +421,19 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+
+}
+
+/* ---- Mobile small ---- */
+@media (max-width: 360px) {
+    .main-text {
+        font-size: clamp(1.9rem, 12vw, 2.8rem);
+    }
+
+    .hero {
+        height: clamp(360px, 115vw, 420px);
+    }
+
+
 }
