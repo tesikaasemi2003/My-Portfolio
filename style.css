@@ -371,4 +371,9 @@ footer {
         height: clamp(380px, 110vw, 480px);
         border-radius: 18px;
     }
+
+    .tagline {
+        top: 5%;
+        font-size: 0.85rem;
+    }
 }
