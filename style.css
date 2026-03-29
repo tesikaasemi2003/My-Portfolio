@@ -376,4 +376,9 @@ footer {
         top: 5%;
         font-size: 0.85rem;
     }
+
+    .vertical-text {
+        font-size: 0.78rem;
+        letter-spacing: 2px;
+    }
 }
