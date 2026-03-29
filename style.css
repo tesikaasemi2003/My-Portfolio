@@ -230,3 +230,10 @@ footer {
     background: #3b1a75;
     text-align: center;
 }
+
+.gallery-section h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 50px;
+    color: #f1e8ff;
+    font-weight: 700;
+}
