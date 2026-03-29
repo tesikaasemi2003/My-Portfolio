@@ -302,4 +302,10 @@ footer {
         margin-top: 14px;
         width: 100%;
     }
+
+    nav.open {
+        display: flex;
+    }
+
+
 }
