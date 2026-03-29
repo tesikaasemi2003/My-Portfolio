@@ -362,4 +362,8 @@ footer {
     header {
         padding: 16px 16px 0;
     }
+
+    main {
+        padding: 16px 10px;
+    }
 }
