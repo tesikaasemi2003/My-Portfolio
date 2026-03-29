@@ -307,5 +307,12 @@ footer {
         display: flex;
     }
 
+    nav a {
+        font-size: 15px;
+    }
 
+    .hero {
+        height: clamp(420px, 75vw, 520px);
+        border-radius: 22px;
+    }
 }
