@@ -247,3 +247,12 @@ footer {
     list-style: none;
     padding: 0;
 }
+
+.gallery-grid li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease;
+}
