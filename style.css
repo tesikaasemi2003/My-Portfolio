@@ -386,4 +386,11 @@ footer {
         top: 44%;
         font-size: clamp(2.2rem, 11vw, 3.4rem);
     }
+
+    .yellow-circle {
+        right: 3%;
+        bottom: 16%;
+        width: clamp(130px, 50vw, 200px);
+        height: clamp(130px, 50vw, 200px);
+    }
 }
