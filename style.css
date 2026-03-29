@@ -315,4 +315,8 @@ footer {
         height: clamp(420px, 75vw, 520px);
         border-radius: 22px;
     }
+
+    .arc {
+        display: none;
+    }
 }
