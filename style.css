@@ -245,7 +245,21 @@ footer {
     pointer-events: none;
 }
 
+.orb1 {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: -80px;
+    background: rgba(109, 40, 217, 0.4);
+}
 
+.orb2 {
+    width: 320px;
+    height: 320px;
+    bottom: -60px;
+    right: -60px;
+    background: rgba(251, 191, 36, 0.15);
+}
 
 
 
