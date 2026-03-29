@@ -319,4 +319,16 @@ footer {
     .arc {
         display: none;
     }
+
+    .vertical-text {
+        letter-spacing: 3px;
+        font-size: 0.9rem;
+    }
+
+    .yellow-circle {
+        right: 5%;
+        bottom: 14%;
+        width: clamp(150px, 42vw, 260px);
+        height: clamp(150px, 42vw, 260px);
+    }
 }
