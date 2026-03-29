@@ -345,4 +345,21 @@ footer {
         height: clamp(90px, 22vw, 130px);
         font-size: clamp(10px, 2vw, 13px);
     }
+
+    .arrow {
+        font-size: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 14px;
+    }
+}
+
+
+/* ---- Mobile large ---- */
+@media (max-width: 480px) {
+    header {
+        padding: 16px 16px 0;
+    }
 }
