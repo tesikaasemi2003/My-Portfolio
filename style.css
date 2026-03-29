@@ -408,4 +408,13 @@ footer {
         font-size: 10px;
     }
 
+    .arrow {
+        font-size: 17px;
+        margin-top: 3px;
+    }
+
+    .gallery-section {
+        padding: 60px 4% 80px;
+    }
+
 }
