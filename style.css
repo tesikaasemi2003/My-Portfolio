@@ -13,7 +13,7 @@ body {
     color: #e0d4ff;
 }
 
-/* ================== HEADER / NAV ================== */
+
 header {
     width: 100%;
     max-width: 1200px;
@@ -90,7 +90,7 @@ main {
 /* Vertical Text */
 .vertical-text {
     position: absolute;
-    left: 6%;
+    left: 3%;
     top: 50%;
     transform: translateY(-50%);
     writing-mode: vertical-rl;
