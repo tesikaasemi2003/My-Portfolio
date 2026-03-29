@@ -295,8 +295,30 @@ footer {
     animation: fadeUp 0.6s 0.25s forwards;
 }
 
-.hdr_3{
+.hdr_3 span {
     color: #fbbf24;
+}
+
+.hdr_3 {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #c4b5fd;
+    max-width: 500px;
+    margin-inline: auto;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.4s forwards;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px 0 48px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.5s forwards;
 }
 
 
