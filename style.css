@@ -366,4 +366,9 @@ footer {
     main {
         padding: 16px 10px;
     }
+
+    .hero {
+        height: clamp(380px, 110vw, 480px);
+        border-radius: 18px;
+    }
 }
