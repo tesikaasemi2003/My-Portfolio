@@ -411,6 +411,25 @@ footer {
     overflow: hidden;
 }
 
+.bubble::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 26px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    transform: rotate(-30deg);
+    pointer-events: none;
+}
+
+.bubble svg {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    z-index: 1;
+}
 
 
 
@@ -450,9 +469,7 @@ footer {
 
 
 
-
-
-                  /*===================GALLERY======================*/
+/*===================GALLERY======================*/
 
 
 .gallery-section {
