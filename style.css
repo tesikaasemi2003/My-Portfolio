@@ -229,7 +229,21 @@ footer {
     box-sizing: border-box;
 }
 
+.wrap {
+    background: linear-gradient(135deg, #2e1065 0%, #4c1d95 50%, #1e1b4b 100%);
+    min-height: 100vh;
+    padding: 60px 24px 80px;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
 
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+}
 
 
 
