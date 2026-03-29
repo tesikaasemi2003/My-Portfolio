@@ -276,6 +276,18 @@ footer {
     z-index: 2;
 }
 
+.hdr_1 {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #fbbf24;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.1s forwards;
+}
+
+
+
 
 
 
