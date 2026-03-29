@@ -339,6 +339,27 @@ footer {
     color: #f5f0ff;
 }
 
+.tab.active {
+    background: #fbbf24;
+    border-color: #fbbf24;
+    color: #1c1000;
+    font-weight: 700;
+}
+
+.sect-label {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(196, 181, 253, 0.5);
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
 
 
 
