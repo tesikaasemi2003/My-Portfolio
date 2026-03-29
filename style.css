@@ -220,3 +220,13 @@ footer {
     font-size: 14px;
     margin-top: auto;
 }
+
+
+                  /*===================GALLERY======================*/
+
+
+.gallery-section {
+    padding: 90px 5% 110px;
+    background: #3b1a75;
+    text-align: center;
+}
