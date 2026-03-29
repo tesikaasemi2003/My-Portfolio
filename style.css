@@ -381,4 +381,9 @@ footer {
         font-size: 0.78rem;
         letter-spacing: 2px;
     }
+
+    .main-text {
+        top: 44%;
+        font-size: clamp(2.2rem, 11vw, 3.4rem);
+    }
 }
