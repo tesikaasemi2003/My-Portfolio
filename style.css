@@ -338,4 +338,11 @@ footer {
         width: clamp(170px, 45vw, 280px);
     }
 
+    .cta {
+        right: 6%;
+        bottom: 18%;
+        width: clamp(90px, 22vw, 130px);
+        height: clamp(90px, 22vw, 130px);
+        font-size: clamp(10px, 2vw, 13px);
+    }
 }
