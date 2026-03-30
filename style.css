@@ -481,6 +481,20 @@ footer {
     animation: fadeUp 0.6s 1.4s forwards;
 }
 
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #c4b5fd;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
 
 
 
