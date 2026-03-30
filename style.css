@@ -690,9 +690,22 @@ footer {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     transition: transform 0.4s ease;
 }
+.photo-label {
+    position: absolute;
+    inset: 0;
+    background: rgba(60, 20, 100, 0.7);
+    color: #f1e8ff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-.gallery-grid li:hover {
-    transform: translateY(-10px);
+.gallery-grid li:hover .photo-label {
+    opacity: 1;
 }
 
 .gallery-grid li img {
