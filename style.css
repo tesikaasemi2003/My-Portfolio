@@ -229,6 +229,9 @@ footer {
     box-sizing: border-box;
 }
 
+/* ========================
+   LAYOUT WRAPPER
+======================== */
 .wrap {
     background: linear-gradient(135deg, #2e1065 0%, #4c1d95 50%, #1e1b4b 100%);
     min-height: 100vh;
@@ -238,6 +241,9 @@ footer {
     overflow: hidden;
 }
 
+/* ========================
+   BACKGROUND ORBS
+======================== */
 .orb {
     position: absolute;
     border-radius: 50%;
@@ -269,6 +275,9 @@ footer {
     background: rgba(96, 165, 250, 0.12);
 }
 
+/* ========================
+   HEADER
+======================== */
 .hdr {
     text-align: center;
     margin-bottom: 20px;
@@ -309,6 +318,9 @@ footer {
     animation: fadeUp 0.6s 0.4s forwards;
 }
 
+/* ========================
+   FILTER TABS
+======================== */
 .tabs {
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +345,6 @@ footer {
     transition: all 0.2s;
 }
 
-
 .tab:hover {
     border-color: rgba(255, 255, 255, 0.3);
     color: #f5f0ff;
@@ -346,6 +357,9 @@ footer {
     font-weight: 700;
 }
 
+/* ========================
+   SECTION LABEL
+======================== */
 .sect-label {
     text-align: center;
     font-size: 11px;
@@ -357,7 +371,9 @@ footer {
     z-index: 2;
 }
 
-
+/* ========================
+   FLOATING FIELD
+======================== */
 .field {
     position: relative;
     z-index: 2;
@@ -372,6 +388,9 @@ footer {
     padding: 20px;
 }
 
+/* ========================
+   ICON BUBBLE WRAPPER
+======================== */
 .icon-bubble {
     display: flex;
     flex-direction: column;
@@ -379,6 +398,7 @@ footer {
     gap: 10px;
     cursor: pointer;
     opacity: 0;
+    position: relative;         /* required for tooltip */
     animation:
             popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
             floatAnim var(--dur) ease-in-out var(--fd) infinite;
@@ -393,6 +413,9 @@ footer {
     transform: scale(1.15);
 }
 
+/* ========================
+   BUBBLE CIRCLE
+======================== */
 .bubble {
     width: 76px;
     height: 76px;
@@ -411,6 +434,7 @@ footer {
     overflow: hidden;
 }
 
+/* Gloss shine overlay */
 .bubble::after {
     content: '';
     position: absolute;
@@ -422,8 +446,12 @@ footer {
     background: rgba(255, 255, 255, 0.18);
     transform: rotate(-30deg);
     pointer-events: none;
+    z-index: 2;
 }
 
+/* ========================
+   SVG ICON SIZE
+======================== */
 .bubble svg {
     width: 42px;
     height: 42px;
@@ -431,6 +459,22 @@ footer {
     z-index: 1;
 }
 
+/* ========================
+   PNG ICON SIZE
+======================== */
+.bubble img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    display: block;             /* removes inline image gap */
+    border-radius: 6px;         /* softens hard-edged PNGs */
+}
+
+/* ========================
+   PROFICIENCY GLOW RINGS
+======================== */
 .bubble.expert {
     box-shadow:
             0 8px 32px rgba(0, 0, 0, 0.4),
@@ -452,12 +496,17 @@ footer {
             inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
+/* ========================
+   LABELS
+======================== */
 .icon-label {
     font-size: 12.5px;
     font-weight: 600;
     color: #f5f0ff;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
+    max-width: 90px;
+    line-height: 1.3;
 }
 
 .icon-sub {
@@ -469,6 +518,57 @@ footer {
     line-height: 1.3;
 }
 
+/* ========================
+   TOOLTIP
+======================== */
+.tooltip {
+    position: absolute;
+    bottom: calc(100% + 12px);  /* floats above the whole bubble card */
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    background: rgba(15, 5, 40, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 11px;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-align: center;
+    color: #f0ebff;
+    opacity: 0;                 /* hidden by default */
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    backdrop-filter: blur(8px);
+    z-index: 100;               /* always on top */
+}
+
+/* Downward arrow */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(15, 5, 40, 0.95);
+}
+
+.tooltip strong {
+    color: #fbbf24;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+/* Reveal on hover */
+.icon-bubble:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ========================
+   LEGEND
+======================== */
 .legend {
     display: flex;
     flex-wrap: wrap;
@@ -493,8 +593,27 @@ footer {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
+/* ========================
+   FOOTER TEXT
+======================== */
+.footer-txt {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 12px;
+    color: rgba(196, 181, 253, 0.45);
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeUp 0.6s 1.6s forwards;
+}
+
+/* ========================
+   ANIMATIONS
+======================== */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -510,8 +629,9 @@ footer {
     50%       { transform: translateY(var(--lift, -12px)); }
 }
 
-/*-------responsive-----------*/
-
+/* ========================
+   RESPONSIVE
+======================== */
 @media (max-width: 500px) {
     .bubble {
         width: 62px;
@@ -524,14 +644,15 @@ footer {
         height: 34px;
     }
 
+    .bubble img {
+        width: 38px;
+        height: 38px;
+    }
+
     .field {
         gap: 22px;
     }
 }
-
-
-
-
 
 
 
