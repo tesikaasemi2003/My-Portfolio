@@ -889,6 +889,35 @@ body::before {
 .dia:nth-child(15) { left:55%; top:22%; --s:7px;  --c:#fbcfe8; --glow:rgba(251,207,232,0.45); --dx:-24px; --dy:36px;  --dur:5.0s; --del:4.5s; }
 .dia:nth-child(16) { left:12%; top:90%; --s:6px;  --c:#e9d5ff; --glow:rgba(233,213,255,0.45); --dx:28px;  --dy:-26px; --dur:6.3s; --del:7.0s; }
 
+.contact-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 24px 0;
+    min-height: 100vh;
+}
+
+.heading { text-align: center; margin-bottom: 48px; }
+.heading h1 {
+    font-size: clamp(26px, 5vw, 40px);
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.heading p {
+    font-size: 15px;
+    color: rgba(200, 180, 240, 0.6);
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 300;
+}
 
 footer {
     width: 100%;
@@ -897,4 +926,12 @@ footer {
     color: #c4b5fd;
     font-size: 14px;
     margin-top: auto;
+}
+
+.contact-body {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
 }
