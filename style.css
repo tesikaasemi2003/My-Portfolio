@@ -831,6 +831,27 @@ body {
     position: relative;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    left: -120px; bottom: 80px;
+    width: 380px; height: 380px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(90,30,160,0.35) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/*sparkles animations*/
+
+.sparkles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
 footer {
     width: 100%;
     text-align: center;
