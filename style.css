@@ -820,18 +820,18 @@ main {
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
+.contact-section {
     font-family: 'Outfit', sans-serif;
     min-height: 100vh;
     background: radial-gradient(ellipse at 30% 60%, #2d1154 0%, #0f0720 55%, #0a0416 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
     position: relative;
+    overflow-x: hidden;
 }
 
-body::before {
+.contact-section::before {
     content: '';
     position: fixed;
     left: -120px; bottom: 80px;
@@ -845,7 +845,7 @@ body::before {
 /*sparkles animations*/
 
 .sparkles {
-    position: fixed;
+    position: absolute;
     inset: 0;
     pointer-events: none;
     z-index: 0;
@@ -897,13 +897,13 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 24px 0;
-    min-height: 100vh;
+    padding: 80px 24px ;
+    min-height: auto;
 }
 
-.heading { text-align: center; margin-bottom: 48px; }
+.heading { text-align: center; margin-bottom: 52px; }
 .heading h1 {
-    font-size: clamp(26px, 5vw, 40px);
+    font-size: clamp(28px, 5vw, 42px);
     font-weight: 600;
     color: #fff;
     letter-spacing: -0.5px;
@@ -919,26 +919,30 @@ body::before {
     font-weight: 300;
 }
 
-.contact-body {
+.contact-row {
     display: flex;
     align-items: flex-end;
-    gap: 40px;
+    gap: 32px;
     width: 100%;
+    max-width: 1000px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .avatar-col {
-    flex: 0 0 auto;
-    width: 240px;
+    flex: 0 0 340px;
+    width: 340px;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
-.avatar-img {
-    width: 240px;
+.avatar-col img.avatar-img {
+    width: 320px;
     height: auto;
-    filter: drop-shadow(0 8px 32px rgba(140, 80, 255, 0.3));
+    display: block;
+    filter: drop-shadow(0 8px 32px rgba(140,80,255,0.3));
 }
 
 /* pinned sparkle stars around avatar */
@@ -952,72 +956,77 @@ body::before {
     animation: twinkle ease-in-out infinite;
 }
 
-.ts svg { display: block; filter: drop-shadow(0 0 4px currentColor); }
-
-.form-card {
-    flex: 1;
-    min-width: 0;
-    background: rgba(255, 255, 255, 0.065);
-    border: 0.5px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
-    padding: 32px 28px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+.ts img {
+    display: block;
+    filter: brightness(1.5) drop-shadow(0 0 5px currentColor);
 }
 
-.field { margin-bottom: 20px; }
-.field label {
+.form-col {
+    flex: 1;
+    min-width: 0;
+    max-width: 520px;
+}
+.form-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 24px;
+    padding: 40px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(14px);
+    width: 100%;
+}
+
+.form-field { margin-bottom: 22px; }
+.form-field label {
     display: block;
     font-size: 13px;
     font-weight: 500;
-    color: rgba(220, 200, 255, 0.8);
-    margin-bottom: 8px;
-    letter-spacing: 0.02em;
+    color: rgba(220,200,255,0.8);
+    margin-bottom: 9px;
+    letter-spacing: 0.03em;
 }
-.field input,
-.field textarea {
+.form-field input,
+.form-field textarea {
     width: 100%;
-    background: rgba(255, 255, 255, 0.06);
-    border: 0.5px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255,255,255,0.06);
+    border: 0.5px solid rgba(255,255,255,0.15);
     border-radius: 10px;
     color: #fff;
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    padding: 11px 14px;
+    padding: 12px 16px;
     outline: none;
     transition: border-color 0.2s, background 0.2s;
     resize: none;
 }
-.field input::placeholder,
-.field textarea::placeholder { color: rgba(180, 160, 220, 0.35); }
-.field input:focus,
-.field textarea:focus {
-    border-color: rgba(160, 100, 255, 0.55);
-    background: rgba(255, 255, 255, 0.1);
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: rgba(180,160,220,0.35); }
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: rgba(160,100,255,0.6);
+    background: rgba(255,255,255,0.1);
 }
-.field textarea { height: 100px; }
+.form-field textarea { height: 110px; }
 
 .send-btn {
     width: 100%;
-    padding: 13px;
+    padding: 14px;
     border-radius: 10px;
     background: #2a1245;
-    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border: 0.5px solid rgba(255,255,255,0.12);
     color: #fff;
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     transition: background 0.2s, transform 0.15s;
-    margin-top: 4px;
 }
-
 .send-btn:hover  { background: #3a1a60; transform: translateY(-1px); }
 .send-btn:active { transform: scale(0.98); }
 .send-icon {
@@ -1027,7 +1036,6 @@ body::before {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
-
 
 footer {
     width: 100%;
@@ -1064,8 +1072,18 @@ footer {
 }
 
 @media (max-width: 640px) {
-    .contact-body { flex-direction: column; align-items: center; }
-    .avatar-col { width: 180px; }
-    .avatar-img { width: 180px; }
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .form-col { width: 100%; min-width: 0; }
+
+    .avatar-col {
+        flex: 0 0 auto;
+        width: 260px;
+        margin-bottom: -20px;
+    }
+    .avatar-col img.avatar-img { width: 180px; }
     .form-card { padding: 24px 18px; }
 }

@@ -264,33 +264,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="gallery-section" id="gallery">
+
     <h2>My Gallery</h2>
     <ul class="gallery-grid">
         <li><img src="assets/gallery/photo_01.jpg" alt="Gallery 1">
@@ -328,7 +303,7 @@
 </section>
 
 
-<section class="Let's contact" id="contact">
+<section class="contact-section" id="contact">
     <div class="sparkles" aria-hidden="true">
         <span class="dia"></span>
         <span class="dia"></span>
@@ -355,7 +330,7 @@
             <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
         </div>
 
-        <div class="contact-body">
+        <div class="contact-row">
             <div class="avatar-col">
         <span class="ts" style="top:8px;left:22px;animation-duration:2.1s;animation-delay:0s;">
                 <img src="assets/footer/star.png" width="20" height="20" alt="sparkle">
@@ -387,7 +362,35 @@
                 <span class="ts" style="top:180px;left:8px;animation-duration:2.2s;animation-delay:2.1s;">
                       <img src="assets/footer/star.png" width="9" height="9" alt="sparkle">
         </span>
+                <img class="avatar-img" src="assets/footer/Hi%20Sticker.png">
+
+            </div>
+
+            <div class="form-col">
+                <div class="form-card">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your name"/>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="hello@example.com"/>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button class="send-btn" type="submit">
+                        Send Message
+                        <svg class="send-icon" viewBox="0 0 24 24">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
+    </div>
 </section>
 
 
