@@ -935,3 +935,17 @@ footer {
     width: 100%;
     justify-content: center;
 }
+
+.avatar-col {
+    flex: 0 0 auto;
+    width: 240px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.avatar-img {
+    width: 240px;
+    height: auto;
+    filter: drop-shadow(0 8px 32px rgba(140, 80, 255, 0.3));
+}
