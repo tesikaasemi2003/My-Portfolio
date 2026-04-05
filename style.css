@@ -206,6 +206,208 @@ html {
     background: var(--bg);
     cursor: none;
 }
+body {
+    background: var(--bg);
+    color: var(--ivory);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.cursor {
+    position: fixed;
+    width: 12px; height: 12px;
+    background: var(--gold);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: transform 0.15s ease;
+}
+
+.site-name {
+    position: fixed;
+    top: 2rem;
+    left: 2.5rem;
+    z-index: 100;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(238,237,254,0.4);
+}
+
+.page-counter {
+    position: fixed;
+    bottom: 2rem;
+    left: 2.5rem;
+    z-index: 100;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: rgba(238,237,254,0.3);
+}
+
+.nav-dots {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-dots a {
+    display: block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(238,237,254,0.3);
+    background: transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-dots a:hover,
+.nav-dots a.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    transform: scale(1.4);
+}
+
+main {
+    view-timeline: --main;
+}
+
+.section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100dvh;
+    view-timeline: --section;
+}
+
+/* ─── BLINK CONTENT ─── */
+.content {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: var(--bg);
+    animation: blink ease-in-out both;
+    animation-timeline: --section;
+}
+
+@keyframes blink {
+    0%, 100% {
+        filter: blur(0.6rem) contrast(4);
+        opacity: 0;
+        visibility: hidden;
+    }
+    50% {
+        filter: blur(0) contrast(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* ─── GRAIN OVERLAY ─── */
+.content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.4;
+}
+
+/* ─── PURPLE RADIAL GLOW ─── */
+.content::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 60%, rgba(83,74,183,0.18) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/*=============Pictures=============*/
+
+#page1 .About_Me {
+    right: -6rem;
+    bottom: -4rem;
+    width: clamp(380px, 50vw, 680px);
+    opacity: 0.82;
+    mix-blend-mode: luminosity;
+    filter: sepia(0.3) hue-rotate(10deg) brightness(0.85);
+    transform: rotate(-8deg);
+    z-index: 3;
+}
+
+#page1 .flower {
+    position: absolute;
+    top: -3rem;
+    left: -4rem;
+    width: clamp(180px, 22vw, 300px);
+    opacity: 0.12;
+    mix-blend-mode: screen;
+    filter: hue-rotate(20deg) brightness(1.3);
+    transform: rotate(30deg) scaleX(-1);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#page2 .skills {
+    left: -3rem;
+    bottom: -5rem;
+    width: clamp(260px, 30vw, 420px);
+    opacity: 0.22;
+    mix-blend-mode: screen;
+    filter: hue-rotate(240deg) brightness(1.4) saturate(1.2);
+    transform: rotate(15deg) scaleX(-1);
+}
+
+#page3 .My animation {
+    right: -2rem;
+    top: -3rem;
+    width: clamp(220px, 28vw, 380px);
+    opacity: 0.28;
+    mix-blend-mode: screen;
+    filter: hue-rotate(30deg) saturate(1.8) brightness(1.1);
+    transform: rotate(-20deg);
+}
+
+#page4 .Thoughts {
+    left: 50%;
+    bottom: -6rem;
+    transform: translateX(-50%) rotate(5deg);
+    width: clamp(300px, 35vw, 480px);
+    opacity: 0.14;
+    mix-blend-mode: screen;
+    filter: hue-rotate(260deg) brightness(1.6) saturate(0.8);
+}
+
+.bg-num {
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(12rem, 35vw, 28rem);
+    font-weight: 900;
+    color: rgba(255,255,255,0.025);
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+/*==========page 01===========*/
+#page1 .content {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 .bg-num { bottom: -4rem; right: -2rem; color: rgba(239,159,39,0.07); }
+
 
 
 /* ==================TOOL STACK =======================*/
