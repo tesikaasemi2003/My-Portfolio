@@ -200,7 +200,12 @@ main {
     --ivory-faint: rgba(250,238,218,0.18);
 }
 
-
+html {
+    scroll-snap-type: y mandatory;
+    timeline-scope: --section, --main;
+    background: var(--bg);
+    cursor: none;
+}
 
 
 /* ==================TOOL STACK =======================*/
