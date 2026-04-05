@@ -181,6 +181,27 @@ main {
 }
 
 
+/*==========About ME==============*/
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg: #1a1535;
+    --bg2: #211c42;
+    --bg3: #160f30;
+    --bg4: #1e1840;
+    --ivory: #FAEEDA;
+    --gold: #EF9F27;
+    --purple: #534AB7;
+    --soft: #EEEDFE;
+    --gold-dim: rgba(239,159,39,0.55);
+    --purple-dim: rgba(83,74,183,0.35);
+    --ivory-dim: rgba(250,238,218,0.55);
+    --ivory-faint: rgba(250,238,218,0.18);
+}
+
+
+
 
 /* ==================TOOL STACK =======================*/
 
