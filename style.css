@@ -276,7 +276,7 @@ body {
     transform: scale(1.4);
 }
 
-main {
+.section {
     view-timeline: --main;
 }
 
@@ -333,7 +333,8 @@ main {
 
 /*=============Pictures=============*/
 
-#page1 .About_Me {
+#page1 .About_Me > img:first-of-type {
+    position: absolute;
     right: -6rem;
     bottom: -4rem;
     width: clamp(380px, 50vw, 680px);
@@ -341,10 +342,11 @@ main {
     mix-blend-mode: luminosity;
     filter: sepia(0.3) hue-rotate(10deg) brightness(0.85);
     transform: rotate(-8deg);
-    z-index: 3;
+    z-index: 1;
+    pointer-events: none;
 }
 
-#page1 .flower {
+#page1 .content >img:last-of-type {
     position: absolute;
     top: -3rem;
     left: -4rem;
@@ -357,7 +359,7 @@ main {
     z-index: 1;
 }
 
-#page2 .skills {
+#page2 .content > img{
     left: -3rem;
     bottom: -5rem;
     width: clamp(260px, 30vw, 420px);
@@ -365,9 +367,12 @@ main {
     mix-blend-mode: screen;
     filter: hue-rotate(240deg) brightness(1.4) saturate(1.2);
     transform: rotate(15deg) scaleX(-1);
+    pointer-events: none;
+    z-index: 1;
 }
 
-#page3 .My animation {
+#page3 .content > img {
+    position: absolute;
     right: -2rem;
     top: -3rem;
     width: clamp(220px, 28vw, 380px);
@@ -375,9 +380,12 @@ main {
     mix-blend-mode: screen;
     filter: hue-rotate(30deg) saturate(1.8) brightness(1.1);
     transform: rotate(-20deg);
+    pointer-events: none;
+    z-index: 1;
 }
 
-#page4 .Thoughts {
+#page4 .content > img {
+    position: absolute;
     left: 50%;
     bottom: -6rem;
     transform: translateX(-50%) rotate(5deg);
@@ -385,6 +393,8 @@ main {
     opacity: 0.14;
     mix-blend-mode: screen;
     filter: hue-rotate(260deg) brightness(1.6) saturate(0.8);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .bg-num {
