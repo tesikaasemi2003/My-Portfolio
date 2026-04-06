@@ -408,6 +408,204 @@ main {
 
 #page1 .bg-num { bottom: -4rem; right: -2rem; color: rgba(239,159,39,0.07); }
 
+#page1 .inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: min(90vw, 1100px);
+    align-items: center;
+}
+
+#page1 .left {
+    padding-right: 4rem;
+    border-right: 1px solid rgba(239,159,39,0.25);
+}
+
+#page1 h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+    color: var(--ivory);
+    margin-bottom: 1.5rem;
+}
+
+#page1 h1 em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+#page1 .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgba(238,237,254,0.65);
+    line-height: 1.5;
+}
+
+#page1 .right {
+    padding-left: 4rem;
+}
+
+#page1 .bio-block p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(250,238,218,0.72);
+}
+
+.stat-row {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.stat-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(238,237,254,0.38);
+}
+
+/*============ Page 02===============*/
+#page2 .content {
+    background: #1e1840;
+}
+
+#page2 .bg-num { top: -3rem; left: -2rem; color: rgba(83,74,183,0.12); }
+
+#page2 .inner {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(90vw, 1100px);
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+#page2 .left-col {
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+#page2 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--ivory);
+    margin-bottom: 1.5rem;
+}
+
+#page2 h2 em { font-style: italic; color: var(--soft); }
+
+#page2 .desc {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(238,237,254,0.55);
+}
+
+.skill-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    border: 1px solid rgba(238,237,254,0.1);
+    padding: 1.75rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+    background: rgba(83,74,183,0.08);
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 0;
+    background: var(--gold);
+    transition: height 0.4s ease;
+}
+
+.skill-card:hover::before { height: 100%; }
+.skill-card:hover { border-color: rgba(239,159,39,0.35); background: rgba(83,74,183,0.14); }
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+    color: var(--gold);
+}
+
+.skill-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ivory);
+    margin-bottom: 0.4rem;
+}
+
+.skill-desc {
+    font-size: 0.78rem;
+    color: rgba(238,237,254,0.5);
+    line-height: 1.6;
+}
+
+/*==============Hobbies & Interests=============*/
+
+#page3 .content {
+    background: #160f30;
+}
+
+#page3 .bg-num { bottom: -2rem; right: 0; color: rgba(239,159,39,0.06); }
+
+#page3 .inner {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 min(5vw, 5rem);
+    gap: 5rem;
+    width: min(100%, 1200px);
+    margin: 0 auto;
+}
+
+#page3 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--ivory);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+#page3 h2 em { font-style: italic; color: var(--gold); }
+
+#page3 .left-col { width: 260px; flex-shrink: 0; }
+
+#page3 .sub {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: rgba(238,237,254,0.5);
+    margin-top: 0.75rem;
+}
+
 
 
 /* ==================TOOL STACK =======================*/
