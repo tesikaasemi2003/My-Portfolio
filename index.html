@@ -41,194 +41,147 @@
     </div>
 </main>
 
-<section class="About Me" id="About">
-    <div class="cursor" id="cursor"></div>
+<!-----------About Me------------>
 
-    <div class="site-name">About Me</div>
+<section id="about">
 
-    <nav class="nav-dots" id="navDots">
-        <a href="#page1" class="active" title="Who I Am"></a>
-        <a href="#page2" title="What I Do"></a>
-        <a href="#page3" title="Hobbies"></a>
-        <a href="#page4" title="Thoughts"></a>
-    </nav>
+    <div class="section-header">
+        <span class="header-label">About Me</span>
+        <div class="header-line"></div>
+        <span class="header-num">01 / 04</span>
+    </div>
 
-    <div class="page-counter" id="pageCounter">01 / 04</div>
-<section>
-    <section class="section" id="page01">
-        <div class="content">
-            <span class="bg-num">01</span>
-            <img src="assets/about/about_pic.png" alt="About_Me">
-            <img src="assets/about/flower.png" alt="flower">
+    <div class="bento">
 
-
-            <div class="inner">
-                <div class="left">
-                    <div class="label">Hello, world</div>
-                    <h1>I'm<br><em>Tesika</em><br>Asemi.</h1>
-                    <p class="tagline">"A curious soul navigating the beautiful mess of existence."</p>
-                </div>
-                <div class="right">
-                    <div class="bio-block">
-                        <div class="hr"></div>
-                        <div class="label">Who I Am</div>
-                        <p>I'm a 24-year-old designer and thinker based in the tropics. I believe in the intersection of logic and beauty — where clean systems meet raw human feeling. I'm drawn to ideas that challenge comfort zones and experiences that leave a mark.</p>
-                    </div>
-                    <div class="stat-row">
-                        <div class="stat">
-
-                            <span class="stat-label">Software Engineering Student</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-label">Coffee Lover</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-label">Creative Thinker</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section" id="page02">
-        <div class="content">
-            <span class="bg-num">02</span>
-        </div>
-
-        <img src="assets/about/skill_pic.png" alt="skills">
-
-
-        <div class="inner">
-            <div class="left-col">
-                <div class="hr" style="background: var(--soft);"></div>
-                <div class="label" style="color: var(--soft);">What I Do</div>
-                <h2>Skills &<br><em>Craft</em></h2>
-                <p class="desc">A collection of disciplines I've fallen in love with over the years — some professional, some deeply personal.</p>
-            </div>
-            <div class="skill-grid">
-                <div class="skill-card">
-                    <span class="skill-icon">✦</span>
-                    <div class="skill-name">Visual Design</div>
-                    <div class="skill-desc">Crafting interfaces and visual systems that feel inevitable — like they couldn't have been any other way.</div>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon">◈</span>
-                    <div class="skill-name">Frontend Dev</div>
-                    <div class="skill-desc">Writing code with the same care a writer brings to sentences. Clean, purposeful, alive.</div>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon">⬡</span>
-                    <div class="skill-name">Photography</div>
-                    <div class="skill-desc">Finding frames within chaos. Light, shadow, and the decisive moment that changes everything.</div>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon">◎</span>
-                    <div class="skill-name">Storytelling</div>
-                    <div class="skill-desc">Every project has a narrative. I find it, shape it, and make sure it resonates with the right people.</div>
-                </div>
+        <!-- BIO TILE -->
+        <div class="tile tile-bio">
+            <p class="bio-eyebrow">Hello, World —</p>
+            <h1 class="bio-name">I'm <em>Tesika</em><br>Asemi.</h1>
+            <p class="bio-text">A Software Engineering student rooted in the tropics, where the air is warm and ideas bloom freely. I believe logic and beauty aren't opposites — they're collaborators.</p>
+            <div class="bio-tags">
+                <span class="bio-tag">SE Student</span>
+                <span class="bio-tag">Coffee Lover</span>
+                <span class="bio-tag">Creative Thinker</span>
+                <span class="bio-tag">Tropical Soul</span>
             </div>
         </div>
 
-    </section>
-
-    <section  class="section" id="page03">
-        <div class="content">
-            <span class="bg-num">03</span>
-
-            <img src="assets/about/animation.gif" alt="My animation">
-
-
-            <div class="inner">
-                <div class="left-col">
-                    <div class="hr" style="background: var(--gold);"></div>
-                    <div class="label" style="color: var(--gold);">Outside Work</div>
-                    <h2>Things<br>I <em>Love</em></h2>
-                    <p class="sub">Life beyond the screen — the rituals, obsessions, and rabbit holes that keep me sane and inspired.</p>
+        <!-- PHOTO TILE — swap src with your real photo -->
+        <div class="tile tile-photo">
+            <img src="assets/images/Background_pic01.png" alt="Tesika Asemi" class="bento-photo">
+            <div class="photo-overlay">
+                <div class="photo-status">
+                    <span class="status-dot"></span>
+                    Open to opportunities
                 </div>
-                <div class="hobby-list">
-                    <div class="hobby-item">
-                        <span class="hobby-num">01</span>
-                        <span class="hobby-emoji">📚</span>
-                        <span class="hobby-name">Reading at 2am</span>
-                        <span class="hobby-tag">Philosophy & Sci-Fi</span>
+                <p class="photo-name">Tesika Asemi</p>
+            </div>
+        </div>
+
+        <!-- QUOTE TILE -->
+        <div class="tile tile-quote">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">A curious soul navigating the beautiful mess of existence — one line of code, one cup of coffee at a time.</p>
+            <p class="quote-attr">— Tesika Asemi</p>
+        </div>
+
+        <!-- FACT 1: Location -->
+        <div class="tile tile-fact tile-fact1">
+            <span class="fact-icon">🌴</span>
+            <div>
+                <p class="fact-label">Based in</p>
+                <p class="fact-value">The Tropics</p>
+                <p class="fact-sub">Where the sun is generous and the WiFi… mostly cooperates.</p>
+            </div>
+        </div>
+
+        <!-- FACT 2: Coffee -->
+        <div class="tile tile-fact tile-fact2">
+            <span class="fact-icon">☕</span>
+            <div>
+                <p class="fact-label">Daily fuel</p>
+                <p class="fact-value">Coffee<br>first.</p>
+                <p class="fact-sub">Then code.</p>
+            </div>
+        </div>
+
+        <!-- SKILLS TILE -->
+        <div class="tile tile-skills">
+            <p class="skills-label">What I do</p>
+            <p class="skills-title">Skills &<br>Craft</p>
+            <div class="skill-bar-list">
+                <div class="skill-bar-item">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name">Frontend Development</span>
+                        <span class="skill-bar-pct">88%</span>
                     </div>
-                    <div class="hobby-item">
-                        <span class="hobby-num">02</span>
-                        <span class="hobby-emoji">🎵</span>
-                        <span class="hobby-name">Making Music</span>
-                        <span class="hobby-tag">Ambient / Lo-fi</span>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:88%;background:linear-gradient(to right,#C4623A,#E89060);"></div>
                     </div>
-                    <div class="hobby-item">
-                        <span class="hobby-num">03</span>
-                        <span class="hobby-emoji">🌿</span>
-                        <span class="hobby-name">Long Walks Alone</span>
-                        <span class="hobby-tag">Mindfulness</span>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name">Visual Design</span>
+                        <span class="skill-bar-pct">82%</span>
                     </div>
-                    <div class="hobby-item">
-                        <span class="hobby-num">04</span>
-                        <span class="hobby-emoji">🍳</span>
-                        <span class="hobby-name">Experimental Cooking</span>
-                        <span class="hobby-tag">Flavor Science</span>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:82%;background:linear-gradient(to right,#6B4E8C,#9870B8);"></div>
                     </div>
-                    <div class="hobby-item">
-                        <span class="hobby-num">05</span>
-                        <span class="hobby-emoji">🌌</span>
-                        <span class="hobby-name">Stargazing & Astronomy</span>
-                        <span class="hobby-tag">Night Sky</span>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name">Photography</span>
+                        <span class="skill-bar-pct">75%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:75%;background:linear-gradient(to right,#7A8C6A,#A0B888);"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name">Storytelling</span>
+                        <span class="skill-bar-pct">90%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:90%;background:linear-gradient(to right,#D4A055,#F0C880);"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name">Backend / Systems</span>
+                        <span class="skill-bar-pct">70%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:70%;background:linear-gradient(to right,rgba(255,255,255,0.5),rgba(255,255,255,0.2));"></div>
                     </div>
                 </div>
             </div>
-
         </div>
 
-    </section>
-
-
-    <section class="section" id="page04">
-        <div class="content">
-            <span class="bg-num">04</span>
-
-            <img src="assets/about/thought_pic.png" alt="Thoughts">
-
-            <div class="inner">
-                <span class="quote-mark">"</span>
-                <div class="thought-cards">
-                    <div class="thought-card">
-                        <div class="thought-category">On Creation</div>
-                        <p class="thought-text">"Every blank canvas is an act of courage. The hardest part isn't finishing — it's starting when the outcome is uncertain."</p>
-                    </div>
-                    <div class="thought-card">
-                        <div class="thought-category">On Life</div>
-                        <p class="thought-text">"I'd rather live ten thousand small beautiful moments than chase one grand spectacular one. The ordinary is sacred."</p>
-                    </div>
-                    <div class="thought-card">
-                        <div class="thought-category">On People</div>
-                        <p class="thought-text">"Everyone is carrying something invisible. That awareness makes me slower to judge and faster to listen."</p>
-                    </div>
-                </div>
-                <p class="closing">Still curious.<br><em>Always becoming.</em></p>
+        <!-- FACT 3: Current focus -->
+        <div class="tile tile-fact tile-fact3">
+            <span class="fact-icon">✦</span>
+            <div>
+                <p class="fact-label">Currently exploring</p>
+                <p class="fact-value">Ideas that challenge comfort zones.</p>
+                <p class="fact-sub">Building things that leave a mark — on screens, on people, on the world in small quiet ways.</p>
             </div>
         </div>
-    </section>
+
+        <!-- FACT 4: What I love -->
+        <div class="tile tile-fact tile-fact4">
+            <p class="fact4-title">I love</p>
+            <div class="fact-loves">
+                <div class="love-item"><span class="love-dot"></span>Flowers that hang like secrets</div>
+                <div class="love-item"><span class="love-dot"></span>Code that reads like poetry</div>
+                <div class="love-item"><span class="love-dot"></span>Rainy days with warm coffee</div>
+                <div class="love-item"><span class="love-dot"></span>Interfaces that feel alive</div>
+                <div class="love-item"><span class="love-dot"></span>Stories that leave a mark</div>
+            </div>
+        </div>
+
+    </div><!-- /bento -->
 </section>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
