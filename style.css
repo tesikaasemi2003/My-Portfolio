@@ -531,6 +531,29 @@ main {
     animation-delay: 1.8s
 }
 
+/* ── SWIPE HINT ── */
+.swipe_hint {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: hint_bounce 2s infinite;
+    cursor: pointer;
+    transition: opacity 0.4s;
+    z-index: 2;
+}
+
+.swipe_hint span {
+    font-size: 10px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
 
 /* ==================TOOL STACK =======================*/
 
