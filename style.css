@@ -181,13 +181,13 @@ main {
 }
 
 
-/* ══════════════════════════════════════
-   ABOUT — BENTO GRID
-══════════════════════════════════════ */
+/* ================ABOUT ME========================*/
+
+
 #about {
     min-height: 100vh;
     padding: clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,4rem);
-    background: #F5EFE4;
+    background: #0F0720FF;
     position: relative;
     overflow: hidden;
     font-family: 'DM Sans', sans-serif;
