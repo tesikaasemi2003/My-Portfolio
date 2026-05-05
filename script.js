@@ -15,6 +15,30 @@ person.addEventListener('mouseleave', () => {
     tagline.textContent  = "Yes, that's Me!";
 });
 
+/*====================Nav=====================*/
+
+// Close mobile menu when a link is clicked
+const navLinks = document.querySelectorAll('nav a');
+const navMenu = document.querySelector('nav');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // This removes the 'open' class you defined in your HTML/CSS
+        navMenu.classList.remove('open');
+    });
+});
+
+// Optional: Smooth scroll adjustment for the "My Projects" drawer
+// Since your projects are inside a "drawer" that opens on swipe/click,
+// you might want the "My Projects" link to trigger the drawer open.
+
+const projectsLink = document.querySelector('a[href="#projects"]');
+projectsLink.addEventListener('click', (e) => {
+    // If the drawer is closed when clicking the nav link, open it
+    if (typeof openDrawer === "function") {
+        openDrawer();
+    }
+});
 
 /*==================== MY Works====================*/
 
