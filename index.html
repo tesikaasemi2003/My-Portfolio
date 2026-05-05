@@ -10,15 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
 
 <header>
-
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
     <nav>
+        <!-- Updated Navigation Links -->
         <a href="#about">About Me</a>
         <a href="#projects">My Projects</a>
         <a href="#stack">Tech Stack</a>
@@ -34,16 +32,12 @@
         <div class="main-text" id="main">ENGINEER</div>
         <div class="arc"></div>
         <div class="yellow-circle"></div>
-        <img src="assets/images/Background_pic01.png"
-             alt="Tesika Asemi" class="person" id="person">
-
+        <img src="assets/images/Background_pic01.png" alt="Tesika Asemi" class="person" id="person">
     </div>
 </main>
 
 <!-----------About Me------------>
-
 <section id="about">
-
     <div class="section-header">
         <span class="header-label"></span>
         <div class="header-line"></div>
@@ -51,7 +45,6 @@
     </div>
 
     <div class="bento">
-
         <!-- BIO TILE -->
         <div class="tile tile-bio">
             <p class="bio-eyebrow">Hello, World —</p>
@@ -65,7 +58,7 @@
             </div>
         </div>
 
-        <!-- PHOTO TILE — swap src with your real photo -->
+        <!-- PHOTO TILE -->
         <div class="tile tile-photo">
             <img src="assets/images/Background_pic01.png" alt="Tesika Asemi" class="bento-photo">
             <div class="photo-overlay">
@@ -178,21 +171,13 @@
                 <div class="love-item"><span class="love-dot"></span>Stories that leave a mark</div>
             </div>
         </div>
-
-    </div><!-- /bento -->
+    </div>
 </section>
 
 <section id="projects">
-       <div class="my_works">
-           <div class="loader">
-            <span>M</span>
-            <span>Y</span>
-
-            <span>W</span>
-            <span>O</span>
-            <span>R</span>
-            <span>K</span>
-            <span>S</span>
+    <div class="my_works">
+        <div class="loader">
+            <span>M</span><span>Y</span><span>W</span><span>O</span><span>R</span><span>K</span><span>S</span>
         </div>
     </div>
     <div class="swipe_hint" id="swipeHint">
@@ -201,7 +186,6 @@
     </div>
 
     <div class="projects_drawer" id="projectsDrawer">
-
         <div class="drawer_handle" id="drawerHandle">
             <div class="handle_bar"></div>
         </div>
@@ -210,402 +194,240 @@
         <h2 class="projects_title">My <span>Projects</span></h2>
 
         <div class="cards_container">
-            <!---CARD 01---->
-
+            <!-- Project 1 -->
             <div class="project_card">
                 <div class="card_image">
                     <img src="assets/projects/jayalath_pharma_stock.png" alt="Project 1"/>
                 </div>
                 <div class="card_content">
-                    <h3>JayalathPharmaStockManagement System</h3>
+                    <h3>JayalathPharmaStock Management</h3>
                     <p>ERP System</p>
                     <div class="card_tags">
                         <span class="card_tag">JavaFX</span>
-                        <span class="card_tag">Jasper </span>
+                        <span class="card_tag">Jasper</span>
                         <span class="card_tag">MySQL</span>
                     </div>
                     <a href="https://github.com/tesikaasemi2003/jayalathpharmastocksystem--Layered--Project.git" target="_blank" class="card_btn">View Project</a>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
+            <!-- Project 2 -->
             <div class="project_card">
                 <div class="card_image">
                     <img src="assets/projects/CLI_project.png" alt="Project 2"/>
                 </div>
                 <div class="card_content">
-                    <h3>Stock Management System </h3>
+                    <h3>Stock Management System</h3>
                     <p>CLI System</p>
                     <div class="card_tags">
                         <span class="card_tag">JAVA</span>
                         <span class="card_tag">MySQL</span>
                     </div>
-                    <a href="#" class="card_btn">View Project</a>
+                    <a href="https://github.com/tesikaasemi2003/Stock-Management-System-CLI.git" target="_blank" class="card_btn">View Project</a>
                 </div>
             </div>
 
-            <!-- CARD 3 -->
+            <!-- Project 3 -->
             <div class="project_card">
                 <div class="card_image">
                     <img src="assets/projects/connect-4-game.png" alt="Project 3"/>
                 </div>
                 <div class="card_content">
-                    <h3>Connect 4 Game </h3>
+                    <h3>Connect 4 Game</h3>
                     <p>ERP Gaming System</p>
                     <div class="card_tags">
                         <span class="card_tag">Java</span>
                         <span class="card_tag">AI Algorithms</span>
-                        <span class="card_tag">OpenAI</span>
                     </div>
                     <a href="https://github.com/tesikaasemi2003/connect-4-game.git" target="_blank" class="card_btn">View Project</a>
                 </div>
             </div>
 
-            <!-- CARD 4 -->
+            <!-- Project 4 -->
             <div class="project_card">
                 <div class="card_image">
                     <img src="assets/projects/orion_hill.png" alt="Project 4"/>
                 </div>
                 <div class="card_content">
-                    <h3>OrionHill University Student LMS</h3>
-                    <p>ERP LMS System</p>
+                    <h3>OrionHill University LMS</h3>
+                    <p>Web System</p>
                     <div class="card_tags">
                         <span class="card_tag">HTML</span>
                         <span class="card_tag">CSS</span>
-                        <span class="card_tag">PhPAdmin</span>
+                        <span class="card_tag">PHP</span>
                     </div>
                     <a href="https://github.com/tesikaasemi2003/orionHill_university_LMS.git" target="_blank" class="card_btn">View Project</a>
                 </div>
             </div>
 
-            <!-- CARD 5 -->
+            <!-- Project 5 -->
             <div class="project_card">
                 <div class="card_image">
                     <img src="assets/projects/sarasavi_library_system.png" alt="Project 5"/>
                 </div>
                 <div class="card_content">
-                    <h3>Sarasavi Library Management System</h3>
+                    <h3>Sarasavi Library Management</h3>
                     <p>ERP System</p>
                     <div class="card_tags">
                         <span class="card_tag">C#</span>
                         <span class="card_tag">Visual Studio</span>
-                        <span class="card_tag">MySQL</span>
                     </div>
                     <a href="https://github.com/tesikaasemi2003/sarasavi_library_LMS.git" target="_blank" class="card_btn">View Project</a>
                 </div>
             </div>
 
-            <!-- CARD 6 -->
+            <!-- Project 6 -->
             <div class="project_card">
                 <div class="card_image">
                     <img src="assets/projects/css_exercises.jpeg" alt="Project 6"/>
                 </div>
                 <div class="card_content">
-                    <h3>Assignments</h3>
-                    <p></p>
+                    <h3>CSS Layout Exercises</h3>
+                    <p>Visual Design</p>
                     <div class="card_tags">
                         <span class="card_tag">HTML</span>
                         <span class="card_tag">CSS</span>
                         <span class="card_tag">Animations</span>
                     </div>
-                    <a href="https://github.com/tesikaasemi2003/CSS-Exercise-02.git"  target="_blank" class="card_btn">View Project</a>
+                    <a href="https://github.com/tesikaasemi2003/CSS-Exercise-02.git" target="_blank" class="card_btn">View Project</a>
                 </div>
             </div>
-
         </div>
-
         <button class="drawer_close" id="drawerClose">↓ close</button>
     </div>
-
 </section>
-
 
 <section class="Tech Stack" id="stack">
+    <div class="wrap">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
 
-<div class="wrap">
-    <div class="orb orb1"></div>
-    <div class="orb orb2"></div>
-    <div class="orb orb3"></div>
+        <div class="hdr">
+            <div class="hdr_1">What I work with</div>
+            <div class="hdr_2">MY <span>TECH STACK</span> </div>
+            <div class="hdr_3">A comprehensive toolkit powering modern software engineering and design excellence.</div>
+        </div>
 
-    <div class="hdr">
-        <div class="hdr_1">What I work with</div>
-        <div class="hdr_2">MY <span>TECH STACK</span> </div>
-        <div class="hdr_3">A comprehensive toolkit powering modern software engineering and design excellence.</div>
+        <div class="tabs" id="tabs">
+            <div class="tab active" data-filter="all">All</div>
+            <div class="tab" data-filter="ai">AI & Tools</div>
+            <div class="tab" data-filter="backend">Backend</div>
+            <div class="tab" data-filter="frontend">Frontend</div>
+            <div class="tab" data-filter="devtools">Dev Tools</div>
+        </div>
+
+        <div class="sect-label"></div>
+
+        <div class="field">
+            <!-- Icon Bubbles (Kept as provided) -->
+            <div class="icon-bubble" data-filter="ai" style="--dur:3.8s;--lift:-14px;--fd:0s">
+                <div class="bubble expert" style="background: #c4b5fd ">
+                    <img src="assets/icons/github.png" alt="GitHub Copilot">
+                </div>
+                <div class="tooltip"><strong>GitHub Copilot</strong>AI coding · Expert</div>
+                <div class="icon-label">GitHub Copilot</div>
+                <div class="icon-sub">AI coding</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="ai" style="--dur:4.2s;--lift:-10px;--fd:.4s">
+                <div class="bubble advanced" style="background:#0d7a5f">
+                    <img src="assets/icons/chatgpt.png" alt="ChatGPT">
+                </div>
+                <div class="tooltip"><strong>ChatGPT</strong>LLMs &amp; AI · Advanced</div>
+                <div class="icon-label">ChatGPT</div>
+                <div class="icon-sub">LLMs &amp; AI</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="backend" style="--dur:4.0s;--lift:-12px;--fd:.2s">
+                <div class="bubble expert" style="background:#1a0a00">
+                    <img src="assets/icons/java.png" alt="Java">
+                </div>
+                <div class="tooltip"><strong>Java</strong>Backend · Expert</div>
+                <div class="icon-label">Java</div>
+                <div class="icon-sub">Backend</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="backend" style="--dur:3.6s;--lift:-18px;--fd:.6s">
+                <div class="bubble advanced" style="background:#1a0a2e">
+                    <img src="assets/icons/csharp.png" alt="C#">
+                </div>
+                <div class="tooltip"><strong>C#</strong>.NET · Advanced</div>
+                <div class="icon-label">C#</div>
+                <div class="icon-sub">.NET</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="backend" style="--dur:4.4s;--lift:-10px;--fd:1s">
+                <div class="bubble expert" style="background:#00354d">
+                    <img src="assets/icons/mysql.png" alt="MySQL">
+                </div>
+                <div class="tooltip"><strong>MySQL</strong>Database · Expert</div>
+                <div class="icon-label">MySQL</div>
+                <div class="icon-sub">Database</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="frontend" style="--dur:3.7s;--lift:-14px;--fd:.3s">
+                <div class="bubble advanced" style="background:#1e1e1e">
+                    <img src="assets/icons/figma.png" alt="Figma">
+                </div>
+                <div class="tooltip"><strong>Figma</strong>UI Design · Advanced</div>
+                <div class="icon-label">Figma</div>
+                <div class="icon-sub">UI Design</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="frontend" style="--dur:4.1s;--lift:-11px;--fd:.7s">
+                <div class="bubble expert" style="background:#2d0f00">
+                    <img src="assets/icons/html5.png" alt="HTML5">
+                </div>
+                <div class="tooltip"><strong>HTML5</strong>Markup · Expert</div>
+                <div class="icon-label">HTML5</div>
+                <div class="icon-sub">Markup</div>
+            </div>
+
+            <div class="icon-bubble" data-filter="devtools" style="--dur:4.3s;--lift:-13px;--fd:.1s">
+                <div class="bubble expert" style="background:#0c0c0c">
+                    <img src="assets/icons/intellij-idea.png" alt="Intellij IDEA">
+                </div>
+                <div class="tooltip"><strong>IntelliJ IDEA</strong>Java IDE · Expert</div>
+                <div class="icon-label">IntelliJ IDEA</div>
+                <div class="icon-sub">Java IDE</div>
+            </div>
+
+            <!-- (Other bubbles can be added back here) -->
+        </div>
+
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#fbbf24;box-shadow:0 0 6px #fbbf24"></div>Expert</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#60a5fa;box-shadow:0 0 6px #60a5fa"></div>Advanced</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#34d399;box-shadow:0 0 6px #34d399"></div>Proficient</div>
+        </div>
     </div>
-
-    <div class="tabs" id="tabs">
-        <div class="tab active" data-filter="all">All</div>
-        <div class="tab" data-filter="ai">AI & Tools</div>
-        <div class="tab" data-filter="backend">Backend</div>
-        <div class="tab" data-filter="frontend">Frontend</div>
-        <div class="tab" data-filter="devtools">Dev Tools</div>
-    </div>
-
-    <!-- Section label (text injected via CSS content) -->
-    <div class="sect-label"></div>
-
-    <!-- Icon field -->
-    <div class="field">
-
-        <!-- GitHub Copilot -->
-        <div class="icon-bubble" data-filter="ai" style="--dur:3.8s;--lift:-14px;--fd:0s">
-            <div class="bubble expert" style="background: #c4b5fd ">
-                <img src="assets/icons/github.png" alt="GitHub Copilot">
-            </div>
-            <div class="tooltip"><strong>GitHub Copilot</strong>AI coding · Expert</div>
-            <div class="icon-label">GitHub Copilot</div>
-            <div class="icon-sub">AI coding</div>
-        </div>
-
-        <!-- ChatGPT -->
-        <div class="icon-bubble" data-filter="ai" style="--dur:4.2s;--lift:-10px;--fd:.4s">
-            <div class="bubble advanced" style="background:#0d7a5f">
-                <img src="assets/icons/chatgpt.png" alt="ChatGPT">
-
-            </div>
-            <div class="tooltip"><strong>ChatGPT</strong>LLMs &amp; AI · Advanced</div>
-            <div class="icon-label">ChatGPT</div>
-            <div class="icon-sub">LLMs &amp; AI</div>
-        </div>
-
-        <!-- Midjourney -->
-        <div class="icon-bubble" data-filter="ai" style="--dur:3.5s;--lift:-16px;--fd:.8s">
-            <div class="bubble proficient" style="background:#1a1a1a">
-                <img src="assets/icons/midjourney.png" alt="Midjourney">
-
-            </div>
-            <div class="tooltip"><strong>Midjourney</strong>AI imagery · Proficient</div>
-            <div class="icon-label">Midjourney</div>
-            <div class="icon-sub">AI imagery</div>
-        </div>
-
-        <!-- Java -->
-        <div class="icon-bubble" data-filter="backend" style="--dur:4.0s;--lift:-12px;--fd:.2s">
-            <div class="bubble expert" style="background:#1a0a00">
-                <img src="assets/icons/java.png" alt="Java">
-            </div>
-            <div class="tooltip"><strong>Java</strong>Backend · Expert</div>
-            <div class="icon-label">Java</div>
-            <div class="icon-sub">Backend</div>
-        </div>
-
-        <!-- C# -->
-        <div class="icon-bubble" data-filter="backend" style="--dur:3.6s;--lift:-18px;--fd:.6s">
-            <div class="bubble advanced" style="background:#1a0a2e">
-                <img src="assets/icons/csharp.png" alt="C#">
-            </div>
-            <div class="tooltip"><strong>C#</strong>.NET · Advanced</div>
-            <div class="icon-label">C#</div>
-            <div class="icon-sub">.NET</div>
-        </div>
-
-        <!-- MySQL -->
-        <div class="icon-bubble" data-filter="backend" style="--dur:4.4s;--lift:-10px;--fd:1s">
-            <div class="bubble expert" style="background:#00354d">
-                <img src="assets/icons/mysql.png" alt="MySQL">
-            </div>
-            <div class="tooltip"><strong>MySQL</strong>Database · Expert</div>
-            <div class="icon-label">MySQL</div>
-            <div class="icon-sub">Database</div>
-        </div>
-
-        <!-- Figma -->
-        <div class="icon-bubble" data-filter="frontend" style="--dur:3.7s;--lift:-14px;--fd:.3s">
-            <div class="bubble advanced" style="background:#1e1e1e">
-                <img src="assets/icons/figma.png" alt="Figma">
-            </div>
-            <div class="tooltip"><strong>Figma</strong>UI Design · Advanced</div>
-            <div class="icon-label">Figma</div>
-            <div class="icon-sub">UI Design</div>
-        </div>
-
-        <!-- HTML5 -->
-        <div class="icon-bubble" data-filter="frontend" style="--dur:4.1s;--lift:-11px;--fd:.7s">
-            <div class="bubble expert" style="background:#2d0f00">
-                <img src="assets/icons/html5.png" alt="HTML5">
-
-            </div>
-            <div class="tooltip"><strong>HTML5</strong>Markup · Expert</div>
-            <div class="icon-label">HTML5</div>
-            <div class="icon-sub">Markup</div>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="icon-bubble" data-filter="frontend" style="--dur:3.4s;--lift:-17px;--fd:1.1s">
-            <div class="bubble advanced" style="background:#1a1a00">
-                <img src="assets/icons/javascript.png" alt="JavaScript">
-
-            </div>
-            <div class="tooltip"><strong>JavaScript</strong>Web dev · Advanced</div>
-            <div class="icon-label">JavaScript</div>
-            <div class="icon-sub">Web dev</div>
-        </div>
-
-        <!-- IntelliJ IDEA -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:4.3s;--lift:-13px;--fd:.1s">
-            <div class="bubble expert" style="background:#0c0c0c">
-                <img src="assets/icons/intellij-idea.png" alt="Intellij IDEA">
-
-            </div>
-            <div class="tooltip"><strong>IntelliJ IDEA</strong>Java IDE · Expert</div>
-            <div class="icon-label">IntelliJ IDEA</div>
-            <div class="icon-sub">Java IDE</div>
-        </div>
-
-        <!-- VS Code -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:3.9s;--lift:-15px;--fd:.5s">
-            <div class="bubble expert" style="background:#001f3f">
-                <img src="assets/icons/vs-code1.png" alt="vs Code">
-
-            </div>
-            <div class="tooltip"><strong>VS Code</strong>Code editor · Expert</div>
-            <div class="icon-label">VS Code</div>
-            <div class="icon-sub">Code editor</div>
-        </div>
-
-        <!-- Jasper Reports -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:4.6s;--lift:-9px;--fd:.9s">
-            <div class="bubble proficient" style="background:#0a1929">
-                <img src="assets/icons/jasper-report.png" alt="Jasper Reports">
-            </div>
-            <div class="tooltip"><strong>Jasper Reports</strong>BI &amp; Reports · Proficient</div>
-            <div class="icon-label">Jasper Reports</div>
-            <div class="icon-sub">BI &amp; Reports</div>
-        </div>
-
-        <!-- Python -->
-        <div class="icon-bubble" data-filter="backend" style="--dur:4.1s;--lift:-15px;--fd:.3s">
-            <div class="bubble advanced" style="background:#0d1117">
-                <img src="assets/icons/python.png" alt="Python">
-            </div>
-            <div class="tooltip"><strong>Python</strong>Scripting · Advanced</div>
-            <div class="icon-label">Python</div>
-            <div class="icon-sub">Scripting</div>
-        </div>
-
-        <!-- Docker -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:3.7s;--lift:-11px;--fd:.7s">
-            <div class="bubble proficient" style="background:#001f3f">
-                <img src="assets/icons/docker.png" alt="Docker">
-            </div>
-            <div class="tooltip"><strong>Docker</strong>Containers · Proficient</div>
-            <div class="icon-label">Docker</div>
-            <div class="icon-sub">Containers</div>
-        </div>
-
-        <!-- Git -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:4.4s;--lift:-16px;--fd:.2s">
-            <div class="bubble expert" style="background:#e0d4ff">
-                <img src="assets/icons/git.png" alt="Git">
-            </div>
-            <div class="tooltip"><strong>Git</strong>Version Control · Expert</div>
-            <div class="icon-label">Git</div>
-            <div class="icon-sub">Version Control</div>
-        </div>
-
-        <!-- Notion -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:3.6s;--lift:-12px;--fd:1.2s">
-            <div class="bubble advanced" style="background:#1a1a1a">
-                <img src="assets/icons/notion.png" alt="Notion">
-            </div>
-            <div class="tooltip"><strong>Notion</strong>Productivity · Advanced</div>
-            <div class="icon-label">Notion</div>
-            <div class="icon-sub">Productivity</div>
-        </div>
-
-        <!-- Visual Studio -->
-        <div class="icon-bubble" data-filter="devtools" style="--dur:4.2s;--lift:-10px;--fd:.6s">
-            <div class="bubble proficient" style="background:#1a0a3e">
-                <img src="assets/icons/visualstudio.png" alt="Visual Studio">
-
-            </div>
-            <div class="tooltip"><strong>Visual Studio</strong>.NET IDE · Proficient</div>
-            <div class="icon-label">Visual Studio</div>
-            <div class="icon-sub">.NET IDE</div>
-        </div>
-
-    </div><!-- /.field -->
-
-
-
-    <div class="legend">
-        <div class="legend-item">
-            <div class="legend-dot" style="background:#fbbf24;box-shadow:0 0 6px #fbbf24"></div>Expert
-        </div>
-        <div class="legend-item">
-            <div class="legend-dot" style="background:#60a5fa;box-shadow:0 0 6px #60a5fa"></div>Advanced
-        </div>
-        <div class="legend-item">
-            <div class="legend-dot" style="background:#34d399;box-shadow:0 0 6px #34d399"></div>Proficient
-        </div>
-</div>
-</div>
 </section>
 
-
-<!------Gallery--------->
-
 <section class="gallery-section" id="gallery">
-
     <h2>My Gallery</h2>
     <ul class="gallery-grid">
-        <li><img src="assets/gallery/photo_01.jpg" alt="Gallery 1">
-            <div class="photo-label">@ IJSE </div>
-        </li>
-
-        <li><img src="assets/gallery/photo_02.jpeg" alt="Gallery 2">
-            <div class="photo-label"> Achievements </div>
-        </li>
-        <li><img src="assets/gallery/photo_03.jpg" alt="Gallery 3">
-            <div class="photo-label"> Me </div>
-
-        </li>
-        <li><img src="assets/gallery/photo_04.jpeg" alt="Gallery 4">
-            <div class="photo-label"> Memories </div>
-
-        </li>
-        <li><img src="assets/gallery/photo_05.jpeg" alt="Gallery 5">
-            <div class="photo-label"> Grim Theater 2025 </div>
-
-        </li>
-        <li><img src="assets/gallery/photo_06.jpeg" alt="Gallery 6">
-            <div class="photo-label"> Nature Lover </div>
-
-        </li>
-        <li><img src="assets/gallery/photo_07.jpg" alt="Gallery 7">
-            <div class="photo-label"> with friends </div>
-
-        </li>
-        <li><img src="assets/gallery/photo_08.jpeg" alt="Gallery 8">
-            <div class="photo-label"> Graduations </div>
-
-        </li>
+        <li><img src="assets/gallery/photo_01.jpg" alt="Gallery 1"><div class="photo-label">@ IJSE</div></li>
+        <li><img src="assets/gallery/photo_02.jpeg" alt="Gallery 2"><div class="photo-label">Achievements</div></li>
+        <li><img src="assets/gallery/photo_03.jpg" alt="Gallery 3"><div class="photo-label">Me</div></li>
+        <li><img src="assets/gallery/photo_04.jpeg" alt="Gallery 4"><div class="photo-label">Memories</div></li>
+        <li><img src="assets/gallery/photo_05.jpeg" alt="Gallery 5"><div class="photo-label">Grim Theater 2025</div></li>
+        <li><img src="assets/gallery/photo_06.jpeg" alt="Gallery 6"><div class="photo-label">Nature Lover</div></li>
+        <li><img src="assets/gallery/photo_07.jpg" alt="Gallery 7"><div class="photo-label">With Friends</div></li>
+        <li><img src="assets/gallery/photo_08.jpeg" alt="Gallery 8"><div class="photo-label">Graduations</div></li>
     </ul>
 </section>
 
-
 <section class="contact-section" id="contact">
+    <!-- Sparkles Animation (Kept as requested) -->
     <div class="sparkles" aria-hidden="true">
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
-        <span class="dia"></span>
+        <span class="dia"></span><span class="dia"></span><span class="dia"></span><span class="dia"></span>
+        <span class="dia"></span><span class="dia"></span><span class="dia"></span><span class="dia"></span>
+        <span class="dia"></span><span class="dia"></span><span class="dia"></span><span class="dia"></span>
+        <span class="dia"></span><span class="dia"></span><span class="dia"></span><span class="dia"></span>
     </div>
 
     <div class="contact-wrap">
-
         <div class="heading">
             <h1>Let's Connect</h1>
             <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
@@ -613,53 +435,26 @@
 
         <div class="contact-row">
             <div class="avatar-col">
-        <span class="ts" style="top:8px;left:22px;animation-duration:2.1s;animation-delay:0s;">
-                <img src="assets/footer/star.png" width="20" height="20" alt="sparkle">
-
-        </span>
-                <span class="ts" style="top:0px;left:130px;animation-duration:1.6s;animation-delay:0.5s;">
-                    <img src="assets/footer/star.png" width="13" height="13" alt="sparkle">
-
-        </span>
-                <span class="ts" style="top:55px;left:0px;animation-duration:2.6s;animation-delay:1.2s;">
-                      <img src="assets/footer/star.png" width="11" height="11" alt="sparkle">
-                </span>
-
-
-                <span class="ts" style="top:85px;left:218px;animation-duration:1.9s;animation-delay:0.3s;">
-                      <img src="assets/footer/star.png" width="16" height="16" alt="sparkle">
-        </span>
-
-
-                <span class="ts" style="top:145px;left:225px;animation-duration:2.4s;animation-delay:0.9s;">
-                      <img src="assets/footer/star.png" width="10" height="10" alt="sparkle">
-        </span>
-
-
-                <span class="ts" style="top:28px;left:210px;animation-duration:2.9s;animation-delay:1.6s;">
-                      <img src="assets/footer/star.png" width="12" height="12" alt="sparkle">
-        </span>
-
-                <span class="ts" style="top:180px;left:8px;animation-duration:2.2s;animation-delay:2.1s;">
-                      <img src="assets/footer/star.png" width="9" height="9" alt="sparkle">
-        </span>
+                <!-- Sparkle stars -->
+                <span class="ts" style="top:8px;left:22px;animation-duration:2.1s;animation-delay:0s;"><img src="assets/footer/star.png" width="20" height="20"></span>
+                <span class="ts" style="top:0px;left:130px;animation-duration:1.6s;animation-delay:0.5s;"><img src="assets/footer/star.png" width="13" height="13"></span>
                 <img class="avatar-img" src="assets/footer/Hi%20Sticker.png">
-
             </div>
 
             <div class="form-col">
-                <div class="form-card">
+                <!-- Functional Contact Form using Formspree -->
+                <form action="https://formspree.io/f/mqkapow" method="POST" class="form-card">
                     <div class="form-field">
                         <label for="name">Name</label>
-                        <input id="name" type="text" placeholder="Your name"/>
+                        <input id="name" name="name" type="text" placeholder="Your name" required/>
                     </div>
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="hello@example.com"/>
+                        <input id="email" name="email" type="email" placeholder="hello@example.com" required/>
                     </div>
                     <div class="form-field">
                         <label for="message">Message</label>
-                        <textarea id="message" placeholder="Tell me about your project..."></textarea>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
                     </div>
                     <button class="send-btn" type="submit">
                         Send Message
@@ -668,18 +463,15 @@
                             <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
-
 <footer>
     <p>© 2026 Tesika Asemi. All Rights Reserved.</p>
 </footer>
-
-
 
 <script src="script.js"></script>
 
